@@ -9,11 +9,11 @@ const Poll = ({submitVote, poll}) => {
 
     return (
         <div>
-            <form>
+            <form onChange={(e)=>setChoice(e.target.value)}>
                 {poll.option.map(option=>(
                     <div className={styles.option}>
-                        <input value={option} type="radio"/>
-                        <label>{option}</label>
+                        <input value={option.option} type="radio"/>
+                        <label>{option.option} {`${option.votes} votes`}</label>
                     </div>
                 ))}
             </form>
