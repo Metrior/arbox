@@ -1,9 +1,10 @@
-import {GET_POLLS, SWITCH_PAGE, SUBMIT_VOTE} from "../actions/types";
+import {GET_POLLS, SWITCH_PAGE, SUBMIT_VOTE, ERROR} from "../actions/types";
 
 const initialSettingsState = {
     polls:[],
     page:1,
-    complete:false
+    complete:false,
+    error: null
 }
 
 const poll = (state = initialSettingsState, action) => {
@@ -17,9 +18,14 @@ const poll = (state = initialSettingsState, action) => {
         case SWITCH_PAGE:
             return {
                 ...state,
-                polls: [action.payload.data],
+                polls: [...action.payload.data],
                 page:action.payload.page,
                 complete: !!action.payload.complete
+            }
+        case ERROR:
+            return {
+                ...state,
+                error:action.payload
             }
         default:
             return state
