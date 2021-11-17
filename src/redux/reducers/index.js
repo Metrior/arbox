@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import auth from "./auth"
+import poll from "./poll"
 
 
 const rootReducer = combineReducers({
-    auth
+    poll
 });
 
 export default rootReducer

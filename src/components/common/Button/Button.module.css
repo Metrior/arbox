@@ -1,3 +1,10 @@
-
+.btn {
+  background: darkred;
+  width: 120px;
+  height: 40px;
+}
+.btn:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=Button.module.css.map */
