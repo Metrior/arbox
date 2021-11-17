@@ -1,4 +1,14 @@
-
 .main {
   background: #282c34;
+}
+
+.pollsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageSwitch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -1,16 +1,40 @@
 import * as actionTypes from "./types";
+import axios from "axios"
+import {url} from "../../constants"
 
-export const switchPage = (msg, type) => {
+export const switchPageAsync = async(page) => {
+    return async dispatch => {
+        try {
+            const response = await axios.post(`${url}/api/polls?page=${page}`)
+            dispatch(switchPage(response))
+        } catch (e) {
+            console.log(e)
+        }
+    }
+}
+
+export const switchPage = (response) => {
     return {
-        type: actionTypes.SWITCH_PAGE,
-        payload: {msg, type}
+        type: actionTypes.GET_POLLS,
+        payload: response
     }
 };
 
-export const submitVote = (msg, type) => {
+export const submitVoteAsync = (poll, option) => {
+    return async dispatch => {
+        try {
+            const response = await axios.post(`${url}/api/poll/${poll}/vote/${option}`)
+            dispatch(submitVote(response))
+        } catch (e) {
+            console.log(e)
+        }
+    }
+};
+
+export const submitVote = (response) => {
     return {
         type: actionTypes.SUBMIT_VOTE,
-        payload: {msg, type}
+        payload: response
     }
 };
 
