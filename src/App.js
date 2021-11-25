@@ -4,14 +4,17 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import routes from "./routes/routes"
-import Main from "./components/Main";
-// import "./App.module.scss"
+import ProfilePage from "./components/pages/ProfilePage";
+import ClubPage from "./components/pages/ClubPage";
+
+import "./App.module.scss"
 
 const App = ({store}) => (
     <Provider store={store}>
         <Router>
             <Switch>
-                <Route path="/" component={Main} exact/>
+                <Route path="/" component={ProfilePage} exact/>
+                <Route path="/club" component={ClubPage}/>
                 {/*{routes}*/}
             </Switch>
         </Router>

@@ -2,12 +2,12 @@ import React from 'react';
 import {Route} from "react-router-dom";
 // import PrivateRoute from "./PrivateRoute"
 
-import Main from "../components/Main";
+import ProfilePage from "../components/pages/ProfilePage";
 
 const Routes = () => {
     return (
         <>
-            <Route path="/" component={Main} exact/>
+            <Route path="/" component={ProfilePage} exact/>
         </>
     );
 };

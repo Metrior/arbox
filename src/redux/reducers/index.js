@@ -1,9 +1,15 @@
 import { combineReducers } from 'redux'
-import poll from "./poll"
+import user from "./user"
+import club from "./club"
+import memberships from "./memberships"
+import forms from "./forms"
 
 
 const rootReducer = combineReducers({
-    poll
+    user,
+    club,
+    memberships,
+    forms
 });
 
 export default rootReducer

@@ -1,4 +1,12 @@
-export const SWITCH_PAGE = 'SWITCH_PAGE';
-export const SUBMIT_VOTE = 'SUBMIT_VOTE';
-export const GET_POLLS = 'GET_POLLS';
-export const ERROR = 'ERROR';
+export const EDIT_MEMBERSHIP = 'EDIT_MEMBERSHIP';
+export const SAVE_MEMBERSHIP = 'SAVE_MEMBERSHIP';
+export const EDIT_FORM = 'EDIT_FORM';
+export const SAVE_FORM = 'SAVE_FORM';
+export const EDIT_USER = 'EDIT_USER';
+export const SAVE_USER = 'SAVE_USER';
+export const EDIT_CLUB = 'EDIT_CLUB';
+export const SAVE_CLUB = 'SAVE_CLUB';
+export const CALL_CLUB = 'CALL_CLUB';
+export const EMAIL_CLUB = 'EMAIL_CLUB';
+export const SITE_CLUB = 'SITE_CLUB';
+// export const ERROR = 'ERROR';

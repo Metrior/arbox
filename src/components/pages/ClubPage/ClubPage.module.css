@@ -1,0 +1,88 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 5%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.linkInner {
+  text-decoration: none;
+  color: #282c34;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clubMainData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.clubImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.tab {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.tabSelected::after {
+  border-bottom: 1px solid #FFFFFF;
+  width: 30px;
+  position: absolute;
+}
+
+.membership {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 5px 0;
+}
+
+.membershipHeader {
+  background-color: gray;
+  border-radius: 10px 10px 0 0;
+  padding: 4px;
+}
+
+.membershipText {
+  padding: 4px;
+}
+
+/*# sourceMappingURL=ClubPage.module.css.map */
